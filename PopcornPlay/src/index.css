@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #EC4899 ;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Primary Color: #6D28D9 (Deep Purple)
+
+Secondary Color: #EC4899 (Neon Pink) */

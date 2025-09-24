@@ -9,7 +9,7 @@ const Home = () => {
     document.title = "PopCornPlay | HomePage"
 
    const [wallpaper, setWallpaper] = useState(null)
-   const [trending, setTrending] = useState([])
+   const [trending, setTrending] = useState("")
 
 
    const GetHeaderWallpaper = async()=>{
@@ -34,12 +34,12 @@ const Home = () => {
             }
     };
 
-    // console.log(wallpaper)
-
+    
     useEffect(()=>{
       !wallpaper && GetHeaderWallpaper()
       !trending && GetTrending()
     },[])
+    // console.log(trending)
 
 
 

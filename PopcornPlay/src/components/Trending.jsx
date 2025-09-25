@@ -10,7 +10,7 @@ const Trending = () => {
     const navigate = useNavigate()
     const [category, setcategory] = useState("all")
     const [duration, setduration] = useState("day")
-    const [trending, settrending] = useState(null)
+    const [trending, settrending] = useState([])
 
 
     const GetTrending = async()=>{
@@ -33,8 +33,8 @@ const Trending = () => {
     
 
 
-  return trending ?(
-    <div className='px-[3%] w-screen h-screen'>
+  return trending.length > 0 ?(
+    <div className='px-[3%] w-screen h-screen overflow-hidden overflow-y-auto '>
         <div className='w-full h-[10vh] flex items-center justify-center'>
             <Link ></Link>
             <h1 className='text-2xl flex items-center font-semibold text-zinc-400'>      <i onClick={()=> navigate(-1)} className="hover:text-[#EC4899] mr-5 ri-arrow-left-line "></i> Trending</h1>

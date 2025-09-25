@@ -5,6 +5,7 @@ import axios from '../utils/axios'
 import Header from './screens/Header'
 import HorizentalCards from './screens/HorizentalCards'
 import Dropdown from './screens/Dropdown'
+import Loader from './Loader'
 
 const Home = () => {
     document.title = "PopCornPlay | HomePage"
@@ -68,7 +69,7 @@ const Home = () => {
         </div>
     </div>
     </>
-  ) : <h1>Loading</h1>
+  ) : <Loader/>
 }
 
 export default Home
